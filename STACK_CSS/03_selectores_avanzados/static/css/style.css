@@ -1,0 +1,74 @@
+/* Selector comodín (Selecciona todos los elementos html) */
+* 
+    /* outline: 1px dashed crimson; */ 
+    /* Linea externa de 2 px */
+* {
+    margin: 0; /* formatea espacios externos de elementos html */
+    padding: 0; /* formatea espacios internos de elementos html */
+    box-sizing: border-box; /* Considera bordes dentro de tamaño de elementos html */
+}
+body{
+    padding: 40px;
+}
+h1 {
+    color: rebeccapurple;
+}
+
+.green {
+    color: mediumseagreen;
+}
+
+#red {
+    color: tomato;
+}
+
+.quote p {
+    color: darkslategray;
+    font-style: italic;
+}
+.quote h4{
+    color: rgb(150, 201, 201);
+    font-weight: bold; /* Negrita */
+}
+
+.header > img { /* solo afecta a los elementos hijos directos (>) */
+    height: 50px; /* Altura de imagen */
+}
+
+#container p { /* Selección de párrafo dentro de contenedor */
+    font-size: 16px; /* Tamaño de letra */
+    background-color: #444; /* Color de fondo */
+    color: white; /* Color de letra */
+}
+
+#container p.highlight {
+    font-weight: bold;
+    color: gold;
+}
+form{
+    padding:20px;
+}
+input[type="text"] { /* Selección de elementos a través de su propiedad [type="text"]*/
+    border: 2px solid royalblue;
+    padding:3px;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: mediumvioletred;
+    border: none; /* quita los bordes por defecto */
+    padding:5px 20px;
+    cursor: pointer; /* Manito para realizar click */
+}
+.color_nombre{
+    color:deepskyblue;
+    background-color: aliceblue;
+}
+.color_rgb{
+    color:rgb(99, 99, 148);
+    background-color: rgb(248, 235, 255);
+}   
+.color_hex{
+    color:#abdde6;
+    background-color: #08525f;
+}

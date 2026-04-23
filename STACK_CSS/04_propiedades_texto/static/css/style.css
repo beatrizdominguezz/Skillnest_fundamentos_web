@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px;
+    outline: solid 1px aquamarine;
+    font-family:'Roboto', sans-serif; /*tipografia*/
+}
+
+.tituloPrincipal {
+    color: darkgray;
+}
+
+.container {
+    padding: 20px;
+}
+
+/*alineacion de texto*/
+.textoIzquierda {
+    text-align: left;
+    /* Alineado a la izquierda */
+}
+
+.textoCentro {
+    text-align: center;
+    /* Alineado al centro */
+}
+
+.textoDerecha {
+    text-align: right;
+    /* Alineado a la derecha */
+}
+
+.subtitulo1 {
+    text-decoration: underline;
+    /* Subrayado */
+    font-style: italic;
+    /* Cursiva */
+}
+
+.tachado {
+    text-decoration: line-through;
+    /* Texto tachado */
+}
+
+.sinDecoracion {
+    text-decoration: none;
+    /* Sin decoración */
+    color: black;
+}
+/*grosor de fuente*/
+.negrita {
+    font-weight: bold;
+    /* Negrita */
+}
+
+.semiNegrita {
+    font-weight: 300;
+    /* Fuente más delgada */
+}
