@@ -19,11 +19,13 @@
 
 .container {
     margin: 0 auto;
-    outline: solid 1px purple;
+    outline: solid 1px rgb(197, 178, 91);
     width: 900px;
     padding: 20px;
 }
-
+.row{
+    padding: 30px;
+}
 /*ejemplos de tamaños de CSS*/
 .aceptar {
     width: 100px;
@@ -55,3 +57,110 @@
     color: green;
 }
 
+/*
+📦 Manejo del contenido con overflow: hidden, scroll, auto
+*/
+.caja {
+    width: 200px;
+    height: 100px;
+    display: inline-block; /* elementos en bloque o comlumnas */
+}
+.example1{
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    
+}
+.example2{
+    width: 300px;
+    height: 100px;
+    background-color: green;
+    
+}
+.example3{
+    width: 300px;
+    height: 100px;
+    background-color: blueviolet;
+
+}
+
+.hidden{ /* Oculta los elementos que sobresalen del contenedor */
+    overflow: hidden;
+}
+.scroll {
+    overflow: scroll;
+}
+.auto{
+    overflow: auto;
+}
+
+/*🎨 Fondo y colores*/
+.banner {
+    width: 100%;
+    height: 400px;
+    background: red url("/STACK_CSS/06_tamanos/static/images/banner.jpg") no-repeat fixed center center;
+    background-size: 130%; /*Aumenta el tamaño de la imagen dentro del contenedor*/
+}
+
+/*🟫 Bordes y estilos*/
+.cancelar {
+    border: 2px dotted red; /* dotted: línea segmentada ...... */
+    padding: 15px;
+    background-color: rgb(255, 177, 151);
+    cursor: pointer;
+}
+
+.articulo {
+    border: 2px solid black; /* solid: línea sólida*/
+    height: 50px;
+    width: 100px;    
+}
+
+/*🟢 Bordes redondeados*/
+.boton_redondeado {
+    padding: 10px 40px;
+    border-radius: 15px; /* redondea esquinas */
+    cursor: pointer;
+}
+
+.caja_redondeada {
+    width: 40px;
+    height: 40px;
+    padding: 10px 16px;
+    background-color: goldenrod;
+    font-weight: bold;
+    color: aliceblue;
+    border-radius: 50%; /* 50% de radius: Círculo perfecto */
+    cursor: pointer;
+}
+.cajitas{
+    width: 150px;
+    height: 40px;
+    outline: solid 1px goldenrod;
+}
+.box1{
+    background-color: rgb(177, 218, 218);
+    padding: 10px; /*Padding aplicado en todos lados*/
+}
+.box2{
+    background-color: rgb(224, 182, 224);
+    padding-top: 0px; /*Espacio interno: arriba*/
+    padding-right: 5px; /*Espacio interno: derecha*/
+    padding-bottom: 0px; /*Espacio interno: abajo*/
+    padding-left: 5px; /*Espacio interno: izquierda*/
+    /*padding: 0px 5px 0px 5px; --> aplicando en todos lados*/
+    /*padding: 0px 5px --> 0px del eje (Y) y 5px del eje (X)*/
+}
+.box3{
+    background-color: rgb(235, 235, 177);
+    margin: 10px; /*Margen externo: Separa elementos*/
+}
+.box4{
+    background-color: rgb(159, 196, 159);
+    margin: 0px 20px; /* Eje (X) modificado con margin*/
+    padding: 5px 0px; /*Eje (Y) modificado con padding*/
+}
+.box5{
+    float: left;
+    width: 30%;
+}
