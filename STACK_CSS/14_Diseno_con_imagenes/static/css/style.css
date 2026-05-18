@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 200px;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+}
+
+.contenido{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
