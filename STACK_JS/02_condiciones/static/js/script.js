@@ -67,7 +67,30 @@ function ejercicio2(){
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
 
+function ejercicio3(){
+    let temperatura = parseInt(prompt("Ingresa la temperatura actual:"))
+    if(temperatura < 10 && temperatura <= -10) {
+        mensaje = "Hace frío";
+    } else if (temperatura >= 10 && temperatura <= 24) {
+        mensaje = "Temperatura agradable";
+    } else if (temperatura >= 35 && temperatura <= 50){
+        mensaje = "Hace calor";
+    } else {
+        mensaje = "Ingresar valores válidos!"
+    }
+    // Alerta adicional
+    if (temperatura > 35 && temperatura < 50) {
+    mensaje += "\n ¡Alerta!: Temperatura extrema";
+    }
+    alert(mensaje)
+}
 
+// parseInt: transforma el texto a número, todo lo que está dentro de un paréntesis
+// prompt: mostrar una ventana en la pantalla para ingresar datos, guarda datos de afuera
+// los que ingresa el usuario (numero o texto son guardados como texto).
+// let: crea variables
+// string (texto): escribir texto
+// números: para hacer cálculos 
 
 // ✅ Ejercicio 4: Verificación de administrador
 // 📝 Enunciado
@@ -82,6 +105,19 @@ function ejercicio2(){
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
 
+function ejercicio4() {
+    let usuario = prompt("Ingrese su nombre de usuario:");
+    let contrasena = parseInt(prompt("Ingrese su contraseña:"));
+
+    if (usuario === "admin" && contrasena === "12345") {
+        alert("Bienvenido Administrador: " + usuario) 
+    } else if (usuario === "admin") {
+        alert("Contraseña Incorrecta");
+    } else {
+        alert(`"Usuario "${usuario}" no encontrado!`)
+    }
+        
+}
 
 
 // ✅ Ejercicio 5: Sistema de aprobación
@@ -100,7 +136,19 @@ function ejercicio2(){
 // Si alguna nota es menor a 2.0 mostrar:
 //  “Debe asistir a reforzamiento”.
 
+function ejercicio5(){
+    let NombreEstudiante = prompt("Nombre del estudiante:");
+    let nota1 = parseInt(prompt("Ingresar primera nota:"));
+    let nota2 = parseInt(prompt("Ingresar segunda nota:"));
+    let nota3 = parseInt(prompt("Ingresar tercera nota:"));
+    let promedio = ((nota1 + nota2 + nota3) / 3);
 
+    if (promedio >= 6.0) {
+        alert("Aprobado con excelencia")
+    } else if (promedio <= 4.0 && promedio > 5.9){
+        alert("Aprobado")
+    } else if (promedio <= 4.0)
+}
 
 // 📌 Requisitos Técnicos
 // Cada ejercicio debe:
