@@ -74,10 +74,27 @@ function ejercicio01(){
 // Utilizar operadores lógicos para realizar las validaciones.
 
 function ejercicio02(){
-    let Usuarios = prompt("¿Eres Profesor o Estudiante?");
-    let CantidadLibros = parseInt(prompt("Cantidad de libros solicitados:"));
-    
-    
+    let usuario = prompt("Ingrese su tipo de usuario: ");
+    let prestamoEstudiante = 10;
+    let prestamoProfesor = 20;
+    let libros = parseInt(prompt("Ingrese la cantidad de libros solicitados: "))
+    let mensaje = "";
+
+    if(usuario == "Estudiante" && libros <= prestamoEstudiante){
+        mensaje = `Bienvenido Estudiante
+        \nPrestamo de libros concedido`;
+        } else if(libros > prestamoEstudiante){
+        mensaje = `La cantidad de libros supera el prestamo designado
+        \nPrestamo denegado`
+    } else if(usuario == "Profesor" && libros <= prestamoProfesor){
+        mensaje = `Bienvenido Profesor
+        \nPrestamo de libros concedido`
+    } else if (libros > prestamoProfesor) {
+        mensaje = `La cantidad de libros supera al prestamo designado\nPrestamo denegado`
+    } else{
+        mensaje = "Ingrese un usuario válido"
+    }
+    alert(mensaje);
 }
 
 // ---
@@ -101,6 +118,24 @@ function ejercicio02(){
 // - Edad
 // - Categoría asignada
 
+function ejercicio03(){
+    let nombre = prompt("Ingrese su nombre");
+    let edad = parseInt(prompt("Ingrese su edad"));
+    let mensaje = "";
+    if(edad <= 12){
+        mensaje = `Nombre: ${nombre} \nEdad: ${edad} \nCategoría: Niño`
+    } else if(edad >= 13 && edad <= 17){
+        mensaje = `Nombre: ${nombre} \nEdad: ${edad} \nCategoría: Adolescente`
+    } else if(edad >= 18 && edad <= 60){
+        mensaje = `Nombre: ${nombre} \nEdad: ${edad} \nCategoría: adulto`
+    } else if(edad >= 61){
+        mensaje = `Nombre: ${nombre} \nEdad: ${edad} \nCategoría: Adulto mayor`
+    } else{
+        mensaje = "Ingrese datos válidos"
+    }
+    alert(mensaje);
+}
+
 // ---
 
 // # Ejercicio 4: Sistema de Bonificación
@@ -121,6 +156,28 @@ function ejercicio02(){
 // - Nombre
 // - Nivel de antigüedad
 // - Mensaje indicando si recibe o no bonificación.
+
+function ejercicio04() {
+    let trabajador = prompt("Ingresar nombre del trabajador");
+    let año = parseInt(prompt("Ingresar años de servicio"));
+    let mensaje = "";
+    if (año < 0) {
+        mensaje = "Por favor ingresa una cantidad de años válida.";
+    } else if (año <= 5) {
+        mensaje = `Nombre: ${trabajador}
+        Nivel de antiguedad: Novato
+        No recibe bonificación por tener 5 años o menos de lo necesario.`;
+    } else if (año <= 10) {
+        mensaje = `Nombre: ${trabajador}
+        Nivel de antiguedad: Intermedio
+        mensaje: ¡Felicidades! Recibe bonificación estándar.`;
+    } else {
+        mensaje = `Nombre: ${trabajador}
+        Nivel de antiguedad: Veterano
+        mensaje: ¡Felicidades! Bonificación máxima por su gran lealtad a la empresa.`;
+    }
+    alert(mensaje)
+}
 
 // ---
 
@@ -146,3 +203,22 @@ function ejercicio02(){
 // - Nombre del conductor
 // - Velocidad
 // - Clasificación obtenida
+
+function ejercicio05(){
+
+let nombreConductor = (prompt("Ingrese nombre del conductor"));
+let velocidad = parseInt(prompt("Ingrese velocidad"));
+let limiteVelocidad = 90;
+let mensajeV = "";
+
+    if(limiteVelocidad <= velocidad && velocidad >= 85){
+        mensajeV = "Velocidad límite"
+    } else if(limiteVelocidad > velocidad && velocidad >= 65){
+        mensajeV = "Velocidad alta, baje un poco la velocidad"
+    } else if(velocidad <= 60 && velocidad > 30 ){
+        mensajeV = "Velocidad adecuada"
+    } else{
+        mensajeV = "Velocidad lenta"
+    }
+    alert(mensajeV)
+}
