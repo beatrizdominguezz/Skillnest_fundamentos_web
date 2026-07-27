@@ -72,14 +72,16 @@ function buscarMayoresEdad() {
 function ejercicio01() {
     let edades = [15,18,20,14,25];
     let primeraEdad = edades[0];
-    let ultimaEdad = edades[edades.length - 1]
-    let 
+    let ultimaEdad = edades[edades.length - 1];
+    let totalDatos = [edades.length];
 
-    alert(`Primer dato`)
+    alert(`Primer dato ${primeraEdad} \nUltima edad ${ultimaEdad} \n total de datos ${totalDatos}`)
 }
 
 // Ejercicio 2 
 
 function ejercicio02() {
+
+    
 
 }
