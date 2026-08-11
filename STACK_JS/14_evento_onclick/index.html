@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Beatriz Dominguez">
+        <title>Document</title>
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <h1 class="titulo">Social Blog</h1>
+            <div class="buscador-contenedor-nav">
+                <form action="#" class="buscador-nav1">
+                    <input type="text" class="buscador-nav2" placeholder="Buscar publicaciones...">
+                </form>
+            </div>
+            <button class="iniciar-sesion" id="elementoSesion">Iniciar sesión</button>
+        </div>
+        <main class="contenedorPrincipal">
+            <section class="contenedor1">
+                <div class="caja">
+                    <h2>Fundamentos de JavaScript</h2>
+                    <p><span class="letra-negrita">Publicado por:</span> Carlos Pérez</p>
+                    <p><span class="letra-negrita">Fecha:</span> 02/03/2025</p>
+                    <p>JavaScript es un lenguaje de programación que se utiliza en el desarrollo web.
+                        Aprende los conceptos básicos para comenzar a programar.</p>
+                    
+                    <button class="boton-corazones" onclick="aumentarLike(this)"><span class="aumentarCorazones">12</span> Me gusta</button>
+                </div>
+                <div class="caja">
+                    <h2>Aprende a diseñar con CSS</h2>
+                    <p><span class="letra-negrita">Publicado por:</span> Ana Gómez</p>
+                    <p><span class="letra-negrita">Fecha:</span> 01/03/2025</p>
+                    <p>El diseño web es una parte fundamental en el desarrollo de aplicaciones web.
+                        Conoce las propiedades de CSS para crear interfaces atractivas.</p>
+                    
+                    <button class="boton-corazones" onclick="aumentarLike(this)"><span class="aumentarCorazones">30</span> Me gusta</button>
+                </div>
+            </section>
+            <section class="contenedor2">
+                <div class="caja2">
+                    <h2>¡Bienvenido!</h2>
+                    <p>Explora nuevas publicaciones y conecta con otros usuarios</p>
+
+                    <button class="boton-perfil" id="revisarPerfil" onclick="mostrarPerfil()">Ver perfil</button>
+                </div>
+            </section>
+        </main>
+        <script src="static/js/script.js"></script>
+    </body>
+
+</html>
