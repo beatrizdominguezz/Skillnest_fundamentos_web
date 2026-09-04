@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 72px;
+    border-bottom: 1px gray solid;
+}
+
+.letra_negra{
+    color: black;
+}
+
+.tacoPalace_titulo{
+    color: orange;
+}
+
+.buscador-nav2{
+    border-radius: 2px;
+    border: 1px gray solid;
+    padding: 4px;
+}
+
+.boton_login{
+    border-radius: 2px;
+    padding: 4px;
+    height: 25px;
+    width: 60px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.espacio_login{
+    display: flex;
+    flex-direction: row;
+    padding-top: 22px;
+    height: 88px;
+    width: 225px;
+}
+
+.contenedor1{
+    background-color: orange;
+    padding: 10px;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedor_principal{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.column_descripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenedor2{
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    padding: 30px;
+}
+
+.imagenes_comida1{
+    width: 150px;
+    height: 150px;
+}
+
+.comida_mexicana1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.letra_negrita{
+    font-weight: bold;
+}
+
+.descripcion_texto{
+    font-size: 30px;
+}
+
+.targeta_recomendaciones{
+    border: 1px gray solid;
+    border-radius: 3px;
+    padding: 45px;
+}
+
+.boton_rojo{
+    padding: 15px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: brown;
+    color: white;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenedor_secundario{
+    display: flex;
+    flex-direction: row;
+    
+}
