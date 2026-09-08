@@ -1,11 +1,11 @@
-const btn1 = document.querySelector('#btn-1');
-const count1 = document.querySelector('#count-1');
+const btn1 = document.querySelector('#boton_1');
+const count1 = document.querySelector('#contar_1');
 
-const btn2 = document.querySelector('#btn-2');
-const count2 = document.querySelector('#count-2');
+const btn2 = document.querySelector('#boton_2');
+const count2 = document.querySelector('#contar_2');
 
-const btn3 = document.querySelector('#btn-3');
-const count3 = document.querySelector('#count-3');
+const btn3 = document.querySelector('#boton_3');
+const count3 = document.querySelector('#contar_3');
 
 
 let likes1 = 0;

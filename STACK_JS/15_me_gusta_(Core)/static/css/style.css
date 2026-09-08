@@ -1,16 +1,16 @@
-* {
-    box-sizing: border-box;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-body {
+body{
     background-color: #f8f9fa;
 }
 
 
-.barra-navegacion {
+.navbar{
     background-color: #404040;
     color: white;
     text-align: center;
@@ -18,7 +18,7 @@ body {
 }
 
 
-.contenedor {
+.contenedor{
     display: flex;
     max-width: 900px;
     margin: 30px auto;
@@ -27,7 +27,7 @@ body {
 }
 
 
-.tarjeta-perfil {
+.perfil_targeta{
     background: white;
     border: 1px solid #333;
     border-radius: 8px;
@@ -37,7 +37,7 @@ body {
     height: fit-content;
 }
 
-.foto-perfil {
+.foto_perfil{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -45,12 +45,12 @@ body {
     margin-bottom: 10px;
 }
 
-.tarjeta-perfil h2 {
+.perfil_targeta h2{
     font-size: 1.2rem;
     margin-bottom: 12px;
 }
 
-.btn-perfil {
+.boton_perfil{
     background-color: #31a2c5;
     color: white;
     border: none;
@@ -60,17 +60,17 @@ body {
 }
 
 
-.muro {
+.publicaciones_muro{
     flex: 1;
 }
 
-.muro h2 {
+.publicaciones_muro h2{
     font-size: 1.4rem;
     margin-bottom: 15px;
 }
 
 
-.publicacion {
+.publicacion{
     background-color: #f2f2f2;
     border: 1px solid #333;
     border-radius: 8px;
@@ -78,25 +78,25 @@ body {
     margin-bottom: 15px;
 }
 
-.encabezado-publicacion {
+.publicacion_encabezado{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.encabezado-publicacion h3 {
+.publicacion_encabezado h3{
     font-size: 1.1rem;
 }
 
-.contenedor-me-gusta {
+.contenedor{
     display: flex;
     align-items: center;
-    gap: 10px;
     font-size: 0.95rem;
+    gap: 10px;
 }
 
-.btn-me-gusta {
+.boton_me_gusta{
     background-color: #f7ca55;
     border: 1px solid #d4a017;
     padding: 4px 14px;
@@ -105,16 +105,16 @@ body {
     font-weight: bold;
 }
 
-.btn-me-gusta:hover {
+.boton_me_gusta:hover{
     background-color: #ebb93c;
 }
 
-.contenido-publicacion {
+.publicacion_contenido{
     font-size: 0.95rem;
     color: #222;
 }
 
-.contenido-publicacion a {
-    color: #4b2bb8;
+.publicacion_contenido a{
     text-decoration: underline;
+    color: #4b2bb8;
 }

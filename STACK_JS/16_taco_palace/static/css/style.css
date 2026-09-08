@@ -15,12 +15,18 @@
     border-bottom: 1px gray solid;
 }
 
+.carrito_compras_img{
+    width: 60px;
+    height: 30px;
+}
+
 .letra_negra{
     color: black;
 }
 
 .tacoPalace_titulo{
     color: orange;
+    width: 220px;
 }
 
 .buscador-nav2{
@@ -71,13 +77,16 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-right: 30px;
 }
 
 .contenedor2{
     display: flex;
     flex-direction: row;
     background-color: gray;
-    padding: 30px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 20px;
 }
 
 .imagenes_comida1{
@@ -124,5 +133,16 @@
 .contenedor_secundario{
     display: flex;
     flex-direction: row;
-    
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.comida_mexicanaPrincipal1{
+    height: 406;
+    width: 600px;
+}
+
+.orden_recomendados{
+    height: 100px;
+    width: 100px;
 }
