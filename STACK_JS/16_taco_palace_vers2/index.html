@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Beatriz Dominguez">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Taco Palace</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="static/images/logo.png" alt="logo">
+                <h1><span class="amarillo">Taco</span>Palace</h1>
+            </div>
+            <div class="inputCarrito">
+                <div class="email">
+                    <input type="text" class="ingresar" placeholder="email">
+                    <button onclick="login()" class="boton">Login</button>
+                </div>
+                <div class="carrito">
+                    <img src="static/images/carrito.png" alt="carrito">
+                    <p class="contador">0</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedorPrincipal">
+            <section class="menu">
+                <div class="platos">
+                    <img src="static/images/enchiladas.jpg" alt="enchiladas">
+                    <p>Enchiladas</p>
+                </div>
+                <div class="platos">
+                    <img src="static/images/tacos.jpg" alt="tacos">
+                    <p>Tacos</p>
+                </div>
+                <div class="platos">
+                    <img src="static/images/flautas.jpg" alt="flautas">
+                    <p>Flautas</p>
+                </div>
+                <div class="platos">
+                    <img src="static/images/gorditas.jpg" alt="gorditas">
+                    <p>Gorditas</p>
+                </div>
+                <div class="platos">
+                    <img src="static/images/tostadas.jpg" alt="tostadas">
+                    <p>Tostadas</p>
+                </div>
+                <div class="platos">
+                    <img src="static/images/enfrijoladas.jpg" alt="enfrijoladas">
+                    <p>Enfrijoladas</p>
+                </div>
+            </section>
+            <div class="secciones">
+                <section class="section1">
+                    <div class="loMejor">
+                        <p>La mejor variedad en platillos de comida <strong>mexicana</strong></p>
+                        <p class="texto">Contactanos con servicio a <span class="amarillo">domicilio</span></p>
+                    </div>
+                    <div class="comidaMexicana">
+                        <img class="imagen" src="static/images/comida-mexicana.jpg" alt="Lo mejor">
+                    </div>
+                </section>
+                <section class="section2">
+                    <h2>Recomendados:</h2>
+                    <div class="orden">
+                        <img src="static/images/orden-tacos.jpg" alt="orden-tacos">
+                        <div class="separacion">
+                            <div>
+                                <p>Orden de tacos</p>
+                                <a href="#">Ver Más...</a>
+                            </div>
+                            <div class="botonAgregar">
+                                <button class="agregar">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orden">
+                        <img src="static/images/orden-flautas.jpg" alt="orden-flautas">
+                        <div class="separacion">
+                            <div>
+                                <p>Orden de tacos</p>
+                                <a href="#">Ver Más...</a>
+                            </div>
+                            <div class="botonAgregar">
+                                <button class="agregar">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
