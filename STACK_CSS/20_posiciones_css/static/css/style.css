@@ -143,11 +143,6 @@ barra-navegacion h1{
 }
 
 .boton-cerrar{
-    position: absolute;
-    /* Se ancla exactamente a la esquina superior derecha de la
-    ventana modal */
-    top: -12px;
-    right: -12px;
     background-color: red;
     color: white;
     width: 32px;
@@ -159,7 +154,6 @@ barra-navegacion h1{
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgb(78, 52, 4);
     border: 2px solid white;
 }
 
