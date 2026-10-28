@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Palace</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <!-- Encabezado Principal -->
+    <header class="encabezado">
+        <div class="logotipo">
+            <span class="icono-taco">🌮</span>
+            <span class="texto-logo-taco">Taco</span><span class="texto-logo-palace">Palace</span>
+        </div>
+
+        <div class="seccion-usuario">
+            <form class="formulario-login" id="formulario-login">
+                <input type="email" id="campo-correo" class="entrada-correo" placeholder="email" required>
+                <button type="submit" class="boton-login">Login</button>
+            </form>
+
+            <div class="contenedor-carrito">
+                <span class="icono-carrito">🛒</span>
+                <span id="contador-carrito" class="contador-carrito">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de Categorías / Menú -->
+    <nav class="barra-categorias">
+        <div class="item-categoria">
+            <div class="caja-imagen-categoria">
+                <div class="marcaderecho-x"></div>
+            </div>
+            <span class="nombre-categoria">Enchiladas</span>
+        </div>
+        <div class="item-categoria">
+            <div class="caja-imagen-categoria">
+                <div class="marcaderecho-x"></div>
+            </div>
+            <span class="nombre-categoria">Tacos</span>
+        </div>
+        <div class="item-categoria">
+            <div class="caja-imagen-categoria">
+                <div class="marcaderecho-x"></div>
+            </div>
+            <span class="nombre-categoria">Flautas</span>
+        </div>
+        <div class="item-categoria">
+            <div class="caja-imagen-categoria">
+                <div class="marcaderecho-x"></div>
+            </div>
+            <span class="nombre-categoria">Gorditas</span>
+        </div>
+        <div class="item-categoria">
+            <div class="caja-imagen-categoria">
+                <div class="marcaderecho-x"></div>
+            </div>
+            <span class="nombre-categoria">Tostadas</span>
+        </div>
+        <div class="item-categoria">
+            <div class="caja-imagen-categoria">
+                <div class="marcaderecho-x"></div>
+            </div>
+            <span class="nombre-categoria">Enfrijoladas</span>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="contenedor-principal">
+
+        <!-- Banner Principal con Destacado -->
+        <section class="banner-destacado">
+            <div class="texto-destacado">
+                <h1>La mejor variedad en platillos de comida <span>mexicana</span></h1>
+                <p>Contamos con <strong>servicio</strong> a <span class="resaltado-naranja">domicilio</span></p>
+            </div>
+            <div class="contenedor-imagen-principal">
+                <img id="imagen-principal"
+                    src="https://via.placeholder.com/400x300/e0e0e0/333333?text=Comida+Mexicana+1"
+                    alt="Variedad de comida mexicana">
+            </div>
+        </section>
+
+        <!-- Sección de Recomendados -->
+        <aside class="seccion-recomendados">
+            <h2>Recomendados:</h2>
+
+            <!-- Tarjeta 1 -->
+            <article class="tarjeta-producto">
+                <div class="imagen-producto">
+                    <div class="marcaderecho-x"></div>
+                </div>
+                <div class="detalles-producto">
+                    <h3>Orden de Tacos</h3>
+                    <a href="#" class="enlace-ver-mas">Ver Más...</a>
+                    <button class="boton-agregar-carrito" title="Agregar al carrito">+</button>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2 -->
+            <article class="tarjeta-producto">
+                <div class="imagen-producto">
+                    <div class="marcaderecho-x"></div>
+                </div>
+                <div class="detalles-producto">
+                    <h3>Orden de Flautas</h3>
+                    <a href="#" class="enlace-ver-mas">Ver Más...</a>
+                    <button class="boton-agregar-carrito" title="Agregar al carrito">+</button>
+                </div>
+            </article>
+        </aside>
+
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
